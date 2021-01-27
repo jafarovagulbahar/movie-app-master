@@ -1,0 +1,46 @@
+// Sidebar style
+
+$color-black:#000000;
+$border: 2px solid $color-black;
+$color-white:#ffffff;
+.drawer{
+    .logo{
+        width: 140px;
+    }
+    text-align: center;
+    .FavVisBtn{
+        button{
+               margin: 0px 10px;
+                transition-duration: 0.3s;
+                transition-property: transform;
+                -webkit-tap-highlight-color: transparent;
+                box-shadow: 0 0 1px transparent;
+        }
+            span{
+              margin-top: -5px;
+            }
+            .favorit{
+                transform: scale(1.1) rotate(5deg);
+                background: $color-white;
+                color: $color-black;
+                border: 2px solid $color-black;
+                &:hover{
+                    transform: scale(1.1) rotate(-5deg);
+                    background: $color-white;
+                    color: $color-black;
+                    border: $border
+                }
+            }
+            .watch{
+                background:$color-black;
+                color: $color-white;
+                border: $border;
+                &:hover{
+                    transform: scale(1.1) rotate(-5deg);
+                    background: $color-white;
+                    color: $color-black;
+                    border: $border
+                }
+            }
+    }
+}

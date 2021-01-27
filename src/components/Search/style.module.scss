@@ -1,0 +1,20 @@
+// .search Output styles
+.searchOutput{
+        position: absolute !important;
+        z-index: 111;
+        max-Height: 400px;
+        width: 100%;
+        overflow-y: auto;
+        background: white;
+        box-Shadow: 0px 10px 20px rgba(0, 0, 0, 0.22);
+        z-Index: 2;
+        .details{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 30px;
+          .desc{
+            margin-left: 30px;
+          }
+        }
+}

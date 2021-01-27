@@ -1,0 +1,42 @@
+
+// Home style
+$color-black:#000000;
+$color-white:#ffffff;
+.container{
+    .tabs{
+        width: 100%;
+        height: 50px;
+        background:$color-black;
+        position: sticky !important;
+        top: 0;
+        z-index: 1;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        div{
+            background-color:$color-black;
+        }
+        h4{
+            color: $color-white;
+            font-size: 15px;
+            position: relative;
+            &:hover{
+                &::after{
+                  width: 100%; 
+                  left: 0; 
+                }
+            }
+             &::after{
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: $color-white;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+        }
+    }
+}

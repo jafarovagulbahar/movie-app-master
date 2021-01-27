@@ -1,0 +1,58 @@
+// NavBar Styles
+
+$w-100:100%;
+$color-white:#ffffff;
+
+.mainBanner{
+    height: 200px;
+    width: $w-100;
+    position: relative;
+    background-image: url('./banner.jpg');
+   .search{  
+        width: 200px ;
+        float: right;
+        span, button{
+            background-color: transparent;
+            color: $color-white;
+            border: none;
+        }
+        input{
+            background-color: transparent;
+            color: $color-white;
+            border: none;
+        }
+        &::placeholder{
+            color: $color-white;
+        }
+   }
+   .menuBtn{
+        button{
+            position: relative;
+            top: 180px;
+            left: 44px;
+            z-index: 2;
+            background: transparent;
+            color: #ffff;
+            border: none;
+            &:hover{
+            border: none;
+            }
+        }
+        svg{
+            font-size: 20px;
+        }
+  }
+}
+.logo{
+    width: 130px;
+    position: relative;
+    bottom:60px;
+}
+  .overlay{
+    position: absolute;
+    width: $w-100;
+    height: $w-100;
+    top: 0px;
+    top:75px;
+   
+}

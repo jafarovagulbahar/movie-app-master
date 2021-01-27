@@ -1,0 +1,30 @@
+
+   // Button- Loading
+
+   $color-dark:#1c1d3d;
+   $color-white:#ffffff;
+   $border: 2px solid  $color-dark;
+
+   .rowLoad{
+        display: flex;
+        justify-content: center ;
+        .loadBtn{
+            display: inline-block;
+            transition-duration: 0.3s;
+            transition-property: transform;
+            -webkit-tap-highlight-color: transparent;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            margin-bottom: 30px;
+            background: $color-dark;
+            color:  $color-white;
+            border: $border;
+            &:hover{
+                transform: scale(1.1) rotate(4deg);
+                background:  $color-white;
+                color:  $color-dark;
+                border: $border;
+            }
+        }
+    }
+    

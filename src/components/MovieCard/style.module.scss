@@ -1,0 +1,88 @@
+
+// All Movie Card Items styles
+
+$w-100:100%;
+
+.movieListItem{
+    margin: 15px;
+.card{
+    position: relative;
+    height:$w-100;
+    width: calc(1240px/6);
+    border-radius: 10px !important;
+    overflow: hidden;
+    span{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .maintitle{
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+    img{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover{
+            -webkit-transform: scale(1.3);
+         	transform: scale(1.3);
+        }
+    }
+    &:hover{
+        .overly{
+            transform: translateY(0);
+        }
+        .maintitle{
+            opacity: 0;
+        }
+        
+       
+    }
+    .overly{
+        position: absolute;
+        background-color:#010214b8;;
+        height: 90px;
+        bottom: 0;
+        width: $w-100;
+        left: 0;
+        padding: 0 20px;
+        border-radius: 10px;
+        transform: translateY($w-100);
+        transition: 1s transform;
+        height: $w-100;  
+    }
+    .buttonHeart{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        button{
+            background-color:transparent;
+            border: none;
+            &:hover{
+                box-shadow: 0px 2px 9px 0px #e6aeae;
+                border: none;
+            }
+        }
+        svg{
+           fill: red;
+           font-size: 20px;
+        }
+    }
+    .details{
+        margin-top: 40px;
+        color: #fff;
+        text-align: center;
+        
+    }
+    .filmtitle{
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .extraInfo{
+        margin-top: 30px;
+    }
+  
+}
+}
